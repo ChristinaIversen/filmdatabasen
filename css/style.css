@@ -1,0 +1,243 @@
+/****************** MARGIN & PADDING LAVER IKKE BOX'S STØRRE ******************/
+* {
+    box-sizing: border-box;
+}
+/******************************************************************************/
+/************************************ MOBILE **********************************/
+/******************************************************************************/
+
+/****************************** BODY ********************************/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background: #000;
+}
+
+#pagewrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/******************************* HEADER ******************************/
+h1{
+    font-size: 250%;
+    margin: 20px auto 10px auto;
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+}
+
+header p{
+    font-size: 120%;
+    margin-bottom: 20px;
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+}
+
+/******************************** MENU *******************************/
+nav {
+    width: 100%;
+    height: 50px;
+}
+
+.menu-ul {
+    background-color: #e6b91e;
+    text-align: center;
+}
+
+.menu-a {
+    color: #fff; 
+}
+
+.menu-a:hover {
+    color: #000;
+}
+
+.menu-li {
+    display: inline-block;
+    padding: 20px;
+}
+
+/**************************** MAIN CONTENT ***************************/
+#contentwrap {
+    margin: 20px;    
+}
+
+h2 {
+    font-size: 150%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.txtbox, .ddl, .txtarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#mybtn {
+    border: none; 
+    outline: none; 
+    background-color: #e6b91e; 
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px; 
+    border-radius: 10px; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#mybtn:hover {
+    background-color: #b18e17; /* Add a dark-grey background on hover */
+}
+
+h3 {
+    font-size: 120%;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.filmbox {
+    
+}
+
+.filmbox p {
+    margin-bottom: 7px;
+    color: darkgray;
+}
+
+.filmbox-span {
+    font-weight: bold;
+    color: #fff;
+}
+
+.filmaar {
+    font-size: 90%;
+    font-weight: lighter;
+}
+
+hr {
+    border-color: #e6b91e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/****************************** VALIDERING ****************************/
+.fejlfelt {
+    text-align: center;
+    width: 100%;
+    background-color: #ff7d7d;
+    display: none;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.fejltekst {
+    text-align: right;
+    width: 500px;
+    margin: 0;
+    color: #000;
+    background-color: : #FF0000;
+}
+
+.succesfelt {
+    text-align: center;
+    width: 100%;
+    background-color: #CCFFCC;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    display: none;
+}
+
+.succestekst {
+    text-align: center;
+    width: 350px;
+    margin: 0;
+    color: #003300;
+    background-color: : #FF0000;
+}
+
+.advarselfelt {
+    text-align: center;
+    width: 100%;
+    background-color: #FFFFCC;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    display: none;
+}
+
+.advarseltekst {
+    text-align: center;
+    width: 350px;
+    margin: 0;
+    color: #003300;
+    background-color:  #FFFF00;
+}
+
+
+/********************************* FOOTER ******************************/
+footer {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-top: 3px solid #e6b91e;
+}
+
+/******************************************************************************/
+/************************************ TABLET **********************************/
+/******************************************************************************/
+@media screen and (min-width: 768px) {
+    /**************************** MAIN CONTENT **************************/
+    #contentwrap {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .txtbox, .ddl, .txtarea {
+        width: 100%;
+    }
+
+    /***************************** VALIDERING ***************************/
+    .fejlfelt {
+        width: 100%;
+    }
+
+    .succesfelt {
+        width: 100%;
+    }
+
+    .advarselfelt {
+        width: 100%;
+    }
+
+
+}
+/******************************************************************************/
+/********************************** DESKTOP ***********************************/
+/******************************************************************************/
+@media screen and (min-width: 1024px) {
+    /**************************** MAIN CONTENT **************************/
+    #contentwrap {
+        width: 35%;
+        margin: 0 auto;
+    }
+    
+    .txtbox, .ddl, .txtarea {
+        width: 100%;
+    }
+
+    /***************************** VALIDERING ***************************/
+    .fejlfelt {
+        width: 100%;
+    }
+
+    .succesfelt {
+        width: 100%;
+    }
+
+    .advarselfelt {
+        width: 100%;
+    }
+}
